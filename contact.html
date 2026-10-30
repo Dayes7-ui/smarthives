@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Contact — Smart Hives</title>
+<meta name="description" content="Contact Smart Hives about smart beehives, honey, pilots and partnerships.">
+<meta property="og:title" content="Contact — Smart Hives"><meta property="og:description" content="Contact Smart Hives about smart beehives, honey, pilots and partnerships.">
+<meta property="og:image" content="assets/brand/og-cover.jpg"><meta property="og:type" content="website">
+<meta name="theme-color" content="#ffb80c">
+<link rel="icon" type="image/png" href="assets/brand/favicon.png?v=2"><link rel="icon" type="image/png" sizes="32x32" href="assets/brand/favicon-32.png?v=2"><link rel="shortcut icon" href="favicon.ico?v=2"><link rel="apple-touch-icon" href="assets/brand/apple-touch-icon.png?v=2">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600;700;800;900&family=Lora:ital,wght@0,700;1,400;1,500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="nav">
+  <div class="nav-in">
+    <ul class="nav-links"><li><a href="index.html">Home</a></li><li><a href="about.html">About</a></li><li><a href="index.html#technology">Technology</a></li></ul>
+    <a class="brand" href="index.html" aria-label="Smart Hives — home"><img src="assets/brand/logo-black.png" alt="Smart Hives" width="700" height="390"></a>
+    <ul class="nav-links right"><li><a href="products.html">Hives</a></li><li><a href="honey.html">Honey</a></li><li><a class="enq-link" href="contact.html#enquiry" aria-current="page">Contact <span class="enq-count" data-n="0" aria-label="items in your enquiry">0</span></a></li></ul>
+    <button class="burger" aria-label="Menu" aria-expanded="false"><span></span></button>
+  </div>
+</header>
+<nav class="drawer" aria-label="Mobile">
+  <a href="index.html">Home</a><a href="about.html">About</a><a href="index.html#technology">Technology</a>
+  <a href="products.html">Hives</a><a href="honey.html">Honey</a>
+  <a href="contact.html#enquiry">Contact / Enquiry</a>
+</nav>
+<main id="main">
+
+<section class="phero"><svg class="phero-hex" viewBox="0 0 200 200" fill="none" stroke="currentColor" stroke-width="4" aria-hidden="true"><path d="M60 20l30 17v34L60 88 30 71V37zM120 54l30 17v34l-30 17-30-17V71zM60 88l30 17v34l-30 17-30-17v-34zM150 105l30 17v34l-30 17-30-17v-34z"/></svg>
+  <div class="wrap">
+    <span class="eyebrow">Contact</span>
+    <h1 class="display" style="margin-top:12px">Let's talk<br>bees</h1>
+    <p class="lead">Interested in a smart hive, our honey, or a pilot? Tell us a little about you and we'll get back to you.</p>
+  </div>
+</section>
+
+<section class="sec" id="enquiry" style="padding-top:60px"><div class="wrap contact-grid">
+  <div>
+    <form class="form" id="enqForm" novalidate onsubmit="return false">
+      <div class="two">
+        <div class="fld"><label for="name">Your name *</label><input id="name" name="name" required autocomplete="name"></div>
+        <div class="fld"><label for="who">I am a…</label><select id="who" name="who"><option>Beekeeper / farmer</option><option>Honey buyer / retailer</option><option>Organisation / partner</option><option>Other</option></select></div>
+      </div>
+      <div class="two">
+        <div class="fld"><label for="phone">Phone / WhatsApp</label><input id="phone" name="phone" type="tel" autocomplete="tel"></div>
+        <div class="fld"><label for="email">Email</label><input id="email" name="email" type="email" autocomplete="email"></div>
+      </div>
+      <div class="fld"><label for="location">Where are you based?</label><input id="location" name="location" placeholder="Town / area"></div>
+      <div class="fld"><label for="message">Message</label><textarea id="message" name="message" placeholder="How many hives do you keep? What would you like to know?"></textarea></div>
+      <div><button class="btn" type="submit">Send enquiry</button></div>
+    </form>
+    <div class="ready" id="ready" role="status">
+      <strong>Your enquiry is ready.</strong>
+      <p class="muted" style="font-size:.95rem">Copy the message below and send it to us by email or WhatsApp.</p>
+      <pre></pre>
+      <button class="btn sm" type="button" id="copyMsg">Copy message</button>
+    </div>
+  </div>
+  <aside class="enq-box">
+    <h3>Your enquiry list</h3>
+    <p class="muted" style="font-size:.95rem">Products you've added appear here and are included in your message.</p>
+    <p class="enq-empty" id="enqEmpty">Nothing added yet.</p>
+    <ul class="enq-list" id="enqList"></ul>
+    <p style="display:flex;gap:10px;flex-wrap:wrap"><a class="btn ghost sm" href="products.html">Browse hives</a><a class="btn ghost sm" href="honey.html">Browse honey</a></p>
+    <div class="info-line"><b>Phone</b><span><a href="tel:+263787569414">+263 78 756 9414</a></span></div>
+    <div class="info-line"><b>WhatsApp</b><span><a href="https://wa.me/263787569414">Chat on WhatsApp</a></span></div>
+    <div class="info-line"><b>Based in</b><span>Zimbabwe</span></div>
+    <div class="info-line"><b>Serving</b><span>Small-scale beekeepers, farms and honey buyers</span></div>
+  </aside>
+</div></section>
+
+</main>
+<footer class="footer">
+  <div class="wrap">
+    <div class="f-grid">
+      <div>
+        <img class="fl" src="assets/brand/logo-white.png" alt="Smart Hives" width="700" height="390">
+        <p>Smart beekeeping. Better honey production.<br>Locally made, solar-powered smart beehives and honey from Zimbabwe.</p>
+      </div>
+      <div><h4>Explore</h4><ul>
+        <li><a href="index.html">Home</a></li><li><a href="about.html">About</a></li>
+        <li><a href="index.html#technology">Technology</a></li><li><a href="index.html#progress">Progress</a></li><li><a href="contact.html">Contact</a></li></ul></div>
+      <div><h4>Products</h4><ul>
+        <li><a href="products.html#top-bar">Top Bar Hive</a></li>
+        <li><a href="products.html#warre">Warré Hive Full Kit</a></li>
+        <li><a href="products.html#mason">Mason Bee House</a></li>
+        <li><a href="honey.html">Honey</a></li></ul></div>
+      <div><h4>Get in touch</h4><ul>
+        <li>Zimbabwe</li>
+        <li><a href="tel:+263787569414">+263 78 756 9414</a></li>
+        <li><a href="https://wa.me/263787569414">WhatsApp us</a></li>
+        <li><a href="contact.html#enquiry">Send an enquiry</a></li>
+        <li>Beekeepers, farms &amp; honey buyers welcome</li></ul></div>
+    </div>
+    <div class="f-bottom"><span>© 2026 Smart Hives. All rights reserved.</span><span>Smart Beekeeping. Better Honey Production.</span></div>
+  </div>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>
