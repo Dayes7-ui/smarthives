@@ -187,3 +187,33 @@ ${d.message || "-"}`;
   v.addEventListener("error", off);
   const p = v.play(); if (p && p.catch) p.catch(off);
 })();
+
+/* ---------- BuzzBuddy form ---------- */
+(function () {
+  const form = document.getElementById("buzzForm");
+  if (!form) return;
+  const ready = document.getElementById("bready");
+  form.addEventListener("submit", e => {
+    e.preventDefault();
+    const d = Object.fromEntries(new FormData(form));
+    if (!d.name.trim()) { const n = document.getElementById("bname"); n.focus(); n.style.borderColor = "#b3261e"; n.placeholder = "Please enter your name"; return; }
+    if (!d.phone.trim() && !d.email.trim()) { const p = document.getElementById("bphone"); p.focus(); p.style.borderColor = "#b3261e"; p.placeholder = "Phone or email, so we can reply"; return; }
+    const subject = "BuzzBuddy Program: " + d.name;
+    const body = `Name: ${d.name}
+Phone / WhatsApp: ${d.phone || "-"}
+Email: ${d.email || "-"}
+Where are the bees: ${d.location || "-"}
+What is happening: ${d.what}
+
+Message:
+${d.message || "-"}`;
+    const { email, whatsapp } = SMART_HIVES_CONFIG;
+    if (email) { location.href = `mailto:${email}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`; return; }
+    if (whatsapp) { window.open(`https://wa.me/${whatsapp}?text=${encodeURIComponent(subject + "\n\n" + body)}`, "_blank"); return; }
+    ready.querySelector("pre").textContent = body; ready.classList.add("show");
+  });
+  const copy = document.getElementById("bcopy");
+  if (copy) copy.addEventListener("click", async () => {
+    try { await navigator.clipboard.writeText(ready.querySelector("pre").textContent); copy.textContent = "Copied ✓"; } catch (e) { copy.textContent = "Select the text and copy it"; }
+  });
+})();

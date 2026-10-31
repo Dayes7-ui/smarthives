@@ -15,3 +15,7 @@ Free hosting: drag this whole folder onto Netlify Drop, or use GitHub Pages / Cl
 HERO VIDEO
 Put your bee video in assets/video/ named bees.mp4 (and optionally bees.webm).
 Keep it short (10-20 s), no sound needed, under ~8 MB. Until then the hero shows the apiary photo.
+
+BUZZ BUDDY PROGRAM
+buzz-buddy.html is the BuzzBuddy Program page (linked from the menu, footer and home page).
+Its form uses the same email / WhatsApp settings at the top of script.js.
