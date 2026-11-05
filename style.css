@@ -516,3 +516,6 @@ section{position:relative}
 .bbform .fld input,.bbform .fld select{height:56px}
 @media(max-width:960px){.bb-hero-grid,.bb-join{grid-template-columns:1fr}.steps{grid-template-columns:1fr 1fr}.hexmosaic{--w:clamp(120px,38vw,230px);justify-self:start}.bb-photo{max-width:440px}}
 @media(max-width:560px){.steps{grid-template-columns:1fr}}
+
+.prog-photo{margin:32px 0 0;max-width:520px}
+.prog-photo img{width:100%;height:auto;display:block;border-radius:16px;box-shadow:0 18px 44px rgba(27,18,9,.18)}
